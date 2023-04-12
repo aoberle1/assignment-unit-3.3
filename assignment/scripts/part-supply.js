@@ -10,13 +10,18 @@ console.log( 'The number of parts needed is:', partsNeeded );
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 console.log('2. Array of supplyChanges:');
+let supplyChanges = [ '3', '5', '-6', '0', '7', '11' ];
+console.log( 'The supply changes are:', supplyChanges );
 
 // 3. Console log the value of the second item in the 'supplyChanges' array
 console.log('3. Second supplyChange is:');
+console.log( 'The second value of Supply Changes is:', supplyChanges[1] );
 
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges' 
 //    array & console.log the value removed.
 console.log('4. Removed item:');
+removedItem = supplyChanges.pop();
+console.log( `The last Supply change was removed which was ${removedItem}` );
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Adding 25 to supplyChanges.');
