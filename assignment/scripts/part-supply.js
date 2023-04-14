@@ -77,8 +77,28 @@ console.log( 'Total supplies available is:', sum );
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
 
-let totalParts = 572
-let boxFilled = 7
-let totalBoxes = totalParts / boxFilled;
+// Creating variables
+let count = 0;
+let boxCount = 0;
+let totalParts = 572;
+let filledBox = 7;
+let totalBoxes = totalParts / filledBox;
+// % calculates remainder of division
+let remainderParts = totalParts % filledBox;
+// Rounding boxes to whole number
 let wholeBoxes = Math.floor( totalBoxes );
-console.log( wholeBoxes );
+
+console.log( 'Total number of boxes needed is:', wholeBoxes );
+console.log( 'Number of parts remaining is:', remainderParts );
+
+while ( count < filledBox, boxCount <= wholeBoxes-1 ){
+    count ++
+    if ( count = filledBox ){
+        boxCount ++
+        count === 0
+    }
+    if ( filledBox = wholeBoxes){
+        console.log( 'We have filled', filledBox, `boxes and have ${ remainderParts } parts remaining.` );
+        break;
+    }
+}
