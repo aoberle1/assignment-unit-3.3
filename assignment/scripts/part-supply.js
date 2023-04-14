@@ -10,7 +10,7 @@ console.log( 'The number of parts needed is:', partsNeeded );
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 console.log('2. Array of supplyChanges:');
-let supplyChanges = [ '3', '5', '-6', '0', '7', '11' ];
+let supplyChanges = [ 3, 5, -6, 0, 7, 11 ];
 console.log( 'The supply changes are:', supplyChanges );
 
 // 3. Console log the value of the second item in the 'supplyChanges' array
@@ -25,7 +25,7 @@ console.log( `The last Supply change was removed which was ${removedItem}` );
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Adding 25 to supplyChanges.');
-supplyChanges.push( '25' );
+supplyChanges.push( 25 );
 console.log( supplyChanges );
 
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
@@ -61,12 +61,15 @@ console.log('8. Total supplies available is:');
 
 // Using for loop
 // Creating variable to store sum of supplyChanges
-let sumChanges = 0;
+let sum = 0;
 for ( let i = 0; i < supplyChanges.length; i++ ) {
     // using += to add variables together at iteration of i on supplyChanges array
-    sumChanges += supplyChanges[i];
+    sum += supplyChanges[i];
 }
-console.log( 'Total supplies available is:' + sumChanges );
+console.log( 'Total supplies available is:', sum );
+
+// forEach method - more research into the why needed
+
 
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. 
